@@ -10,10 +10,10 @@
     <script src="jquery.js"></script>
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Current Vacancies</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
@@ -29,13 +29,48 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link href="css/elements.css" rel="stylesheet">
+    <script src="js/my_js.js"></script>
+
     <style>
 
-    div {
+
+    .first {
+        background: url("images/google.jpg");
         background-size: cover;
         position: relative;
-        margin: 40px 0 0 0;
         border-radius: 12px;
+        height: 200px;
+    }
+
+    .second {
+        background: url(http://www.c2es.org/docUploads/bofalogo3.jpeg);
+        background-size: cover;
+        position: relative;
+        border-radius: 12px;
+        height: 200px;
+    } 
+
+    .thumbnail{
+        margin-top:40px;
+        overflow: hidden;
+        border-radius: 12px;
+        height: 200px;
+    }
+
+    p {
+        color: rgba(255,255,255,1);
+        background: black;
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        padding: 20px;
+        line-height: 28px;
+        font-size: 16px;
+        text-align: justify;
+        position: absolute;
+        margin: 0;
+        top: 0;
     }
 
     </style>
@@ -52,49 +87,108 @@
         </div>
 
         <!-- Page Features -->
-        <div class="col-md-3 col-sm-6 hero-feature"> 
+        <div> 
             <div class="thumbnail">
-                <img src="https://pbs.twimg.com/profile_images/638751551457103872/KN-NzuRl.png" width="200" height="200">
-                <div class="caption">
-                    <h3>Quantitative Analyst</h3>
-                    <p>Salary:<br />
+                <div class="caption first">
+                    <p>Quantitative Analyst<br />
+                        <small>Salary:<br />
                         Location:<br />
                         Closing date:<br />
-                        Further Details</p>
-                        <p><a href="#" class="btn btn-primary">Apply Now</a> 
-                            <a href="#" class="btn btn-default">See Reviews</a>
+                        Further Details</small></p>
                 </div>
             </div>
+            <!-- Popup Div Starts Here -->
+            <div id="body" style="overflow:hidden;">
+                <div id="abc1">
+                    <div id="popupContact">
+                    <!-- Apply -->
+                        <form name="form1" id="form1" action="#" method="post">
+                            <img id="close" src="http://www.myiconfinder.com/uploads/iconsets/256-256-486a9b90c52d4de7be5c625acc8836a9.png" alt="Cross" height="30" width="30" onclick ="div_hide()">
+                            <h2>Apply</h2>
+                            <hr>
+                            <input id="title" name="title" placeholder="Title" type="text">
+                            <input id="name" name="Forename" placeholder="Forename" type="text">
+                            <input id="name" name="Surname" placeholder="Surname" type="text">
+                            <input id="email" name="email" placeholder="Email" type="text">
+                            <textarea id="msg" name="message" placeholder="Cover Letter"></textarea>
+                            <a href="javascript:%20check_empty()" id="submit">Send</a>
+                        </form>
+                    </div>
+                </div>
+                <div id="abc2">
+                    <div id="popupContact">
+                    <!-- Reviews -->
+                        <form name="form2" id="form2" action="#" method="post">
+                            <img id="close" src="http://www.myiconfinder.com/uploads/iconsets/256-256-486a9b90c52d4de7be5c625acc8836a9.png" alt="Cross" height="30" width="30" onclick ="div_hide()">
+                            <h2>Review</h2>
+                            <hr>
+                            <textarea id="msg" name="message" placeholder="Review here"></textarea>
+                            <a href="javascript:%20check_empty()" id="submit">Send</a>
+                        </form>
+                    </div>
+                </div>
+                    <!-- Popup Div Ends Here -->
+            </div>
+
+            <button type="button" form="form1" onclick="div_show()">Apply Now</button>
+            <button type="button" form="form2" onclick="div_show()">See Reviews</button>
         </div>
 
-        <div class="col-md-3 col-sm-6 hero-feature"> 
+
+
+        <div> 
             <div class="thumbnail">
-                <img src="http://www.entertainmentoverdose.co.uk/wp-content/uploads/2015/09/Tesco.png">
-                <div class="caption">
-                    <h3>Graduate Analyst</h3>
-                    <p>Salary:<br />
+                <div class="caption second">
+                    <p>Graduate Analyst<br />
+                        <small>Salary:<br />
                         Location:<br />
                         Closing date:<br />
-                        Further Details</p>
-                        <p><a href="#" class="btn btn-primary">Apply Now</a> 
-                            <a href="#" class="btn btn-default">See Reviews</a>
+                        Further Details</small></p>
                 </div>
             </div>
+            <!-- Popup Div Starts Here -->
+            <div id="body" style="overflow:hidden;">
+                <div id="abc1">
+                    <div id="popupContact">
+                        <!-- Contact Us Form -->
+                        <form name="form1" id="form1" action="#" method="post">
+                            <img id="close" src="images/3.png" onclick ="div_hide()">
+                            <h2>Contact Us</h2>
+                            <hr>
+                            <input id="name" name="name" placeholder="Name" type="text">
+                            <input id="email" name="email" placeholder="Email" type="text">
+                            <textarea id="msg" name="message" placeholder="Message"></textarea>
+                            <a href="javascript:%20check_empty()" id="submit">Send</a>
+                        </form>
+                    </div>
+                </div>
+                <div id="abc2">
+                    <div id="popupContact">
+                    <!-- Reviews -->
+                        <form name="form2" id="form2" action="#" method="post">
+                            <img id="close" src="http://www.myiconfinder.com/uploads/iconsets/256-256-486a9b90c52d4de7be5c625acc8836a9.png" alt="Cross" height="30" width="30" onclick ="div_hide()">
+                            <h2>Review</h2>
+                            <hr>
+                            <textarea id="msg" name="message" placeholder="Review here"></textarea>
+                            <a href="javascript:%20check_empty()" id="submit">Send</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Popup Div Ends Here -->
+            </div>
+
+            <button type="button" form="form1" onclick="div_show()">Apply Now</button>
+            <button type="button" form="form2" onclick="div_show()">See Reviews</button>
         </div>
 
-        <hr>
+    </div>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+
+</hr>
 
     </div>
     <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
