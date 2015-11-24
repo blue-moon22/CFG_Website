@@ -5,21 +5,23 @@
 
 .jumbotron {
     position: relative;
-    background: #000 url("https://c1.staticflickr.com/9/8298/7883365004_86d91a88a1_b.jpg") center center;
+    background: url("images/intern.png") center center;
     width: 100%;
     height: 100%;
     background-size: cover;
     overflow: hidden;
+
 }
 
 h1 {
 	text-align: center;
 	padding: 30px;
-    padding-bottom: 130px;
+    padding-bottom: 80px;
+    color: #8B4513;
 }
 
 .jumbotron h1 {
-  color: #000000;
+  color: #424242;
 }
 
 .searchBarText {
@@ -31,6 +33,12 @@ h1 {
 
 #HSB {
 	text-align: center;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+div.navbar-default {
+    z-index: -1;
 }
 
 .animate
