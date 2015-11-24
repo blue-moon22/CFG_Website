@@ -1,6 +1,6 @@
 .jumbotron {
 	margin-bottom: 0px;
-	padding-bottom: 70px;
+	padding-bottom: 50px;
 }
 
 .jumbotron {
@@ -15,10 +15,18 @@
 h1 {
 	text-align: center;
 	padding: 30px;
+    padding-bottom: 130px;
 }
 
 .jumbotron h1 {
   color: #000000;
+}
+
+.searchBarText {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    font-weight: 500;
 }
 
 #HSB {
@@ -34,8 +42,8 @@ h1 {
 {
 	position: relative;
 	padding: 5px 20px;
-    margin: 0px 5px 5px 0px;
-    float: left;
+  margin: 0px 5px 5px 0px;
+  float: left;
 	border-radius: 5px;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 15px;
@@ -53,7 +61,7 @@ h1 {
 .action-button:active
 {
 	transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
 	border-bottom: 1px solid;
 }
 
