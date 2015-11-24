@@ -34,8 +34,8 @@ h1 {
 {
 	position: relative;
 	padding: 5px 20px;
-  margin: 0px 5px 5px 0px;
-  float: left;
+    margin: 0px 5px 5px 0px;
+    float: left;
 	border-radius: 5px;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 15px;
@@ -53,13 +53,14 @@ h1 {
 .action-button:active
 {
 	transform: translate(0px,5px);
-  -webkit-transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
 	border-bottom: 1px solid;
 }
 
 body {
     padding-top: 50px;
 }
+
 .dropdown.dropdown-lg .dropdown-menu {
     margin-top: -1px;
     padding: 6px 20px;
