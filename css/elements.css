@@ -128,3 +128,6 @@ font-size:18px;
 cursor:pointer
 }
 
+.navbar {
+	z-index: -1;
+}
